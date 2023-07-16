@@ -39,7 +39,7 @@ public partial class CustomRenderPipeline {
 						LightmapperUtils.Extract(light, ref spotLight);
 						lightData.Init(ref spotLight);
 						break;
-					case LightType.Area:
+					case LightType.Rectangle:
 						var rectangleLight = new RectangleLight();
 						LightmapperUtils.Extract(light, ref rectangleLight);
 						rectangleLight.mode = LightMode.Baked;
